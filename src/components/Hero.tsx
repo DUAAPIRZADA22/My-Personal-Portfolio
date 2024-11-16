@@ -10,13 +10,16 @@ const Hero = () => {
     >
       <Navbar />
       <div className='container mx-auto grid lg:grid-cols-2 h-[calc(100vh-60px)] items-center px-6 lg:px-12'>
-        <div className='text-[40px] sm:text-[50px] lg:text-[60px] xl:text-[80px] font-bold leading-tight'>
+        <div className='text-[35px] sm:text-[50px] lg:text-[60px] xl:text-[80px] font-bold leading-tight'>
           <h1>Hello!</h1>
-          <p className='text-[28px] sm:text-[36px] lg:text-[40px]'>Its me</p>
+          <p className='text-[22px] sm:text-[30px] lg:text-[40px]'>Its me</p>
           <p className='text-pink-800 text-[28px] sm:text-[36px] lg:text-[40px]'>Duaa</p>
           <p className='text-pink-800 text-[28px] sm:text-[36px] lg:text-[40px]'>Pirzada</p>
           <p className='text-[28px] sm:text-[36px] lg:text-[40px]'>And I am a </p>
-          <p data-aos='zoom-in-up' className='text-[36px] sm:text-[45px] lg:text-[50px] text-cyan-300'>
+          <p
+            data-aos='zoom-in-up'
+            className='text-[36px] sm:text-[45px] lg:text-[50px] text-cyan-300'
+          >
             Front-End Developer.
           </p>
 
