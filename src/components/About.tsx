@@ -13,9 +13,11 @@ const About = () => {
           className='rounded-full'
         />
       </div>
+      
       <h1 className='text-3xl sm:text-4xl md:text-5xl text-center text-pink-800 font-serif font-extrabold underline'>
         About Me
       </h1>
+
       <p className='text-gray-600 pt-4 max-w-3xl mx-auto text-lg sm:text-xl md:text-2xl'>
         I am a passionate student at GIAIC, currently diving deep into the exciting realms of Artificial Intelligence,
         Web 3.0, and the Metaverse. With a strong drive to stay ahead of the curve, I am fascinated by the endless 
@@ -29,4 +31,5 @@ const About = () => {
 }
 
 export default About;
+
 
