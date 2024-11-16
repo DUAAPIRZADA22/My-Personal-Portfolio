@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <div id='about' className='container pt-12 px-6 sm:px-8 md:px-16'>
+    <div id='about' className='container pt-12 px-6 sm:px-8 md:px-16 mt-[120px]'>
       <div className="flex justify-center mb-8">
         <Image 
           src="/profile.jpeg" 
@@ -31,5 +31,6 @@ const About = () => {
 }
 
 export default About;
+
 
 
