@@ -50,10 +50,10 @@ const data = [
 const Projects = () => {
   return (
     <div id='projects' className='container pt-32'>
-      <h2 className='text-4xl font-serif text-pink-800 flex justify-center underline mb-8 font-extrabold'>
+      <h2 className='text-5xl font-serif text-pink-800 flex justify-center underline mb-8 font-extrabold'>
         My Projects
       </h2>
-      <div className='grid gap-10 xl:gap-0 xl:gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center'>
+      <div className='grid gap-6 xl:gap-0 xl:gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center mx-auto'>
         {data.map((el) => (
           <Card  
             key={el.id}

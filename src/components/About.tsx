@@ -4,6 +4,15 @@ import Image from 'next/image'
 const About = () => {
   return (
     <div id='about' className='container pt-12'>
+            <div className="flex justify-center mb-8">
+                <Image 
+                    src="/profile.jpeg" 
+                    alt="About Me" 
+                    width={250} 
+                    height={250} 
+                    className='rounded-full'
+                />
+            </div>
         <h1 className='text-4xl md:text-5xl text-center text-pink-800 font-serif font-extrabold underline'>
          About Me
         </h1>

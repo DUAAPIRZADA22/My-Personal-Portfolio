@@ -7,7 +7,7 @@ const Contact = () => {
     <div id='contact' className='pt-32 container'>
       <div className='grid md:grid-cols-2 gap-10'>
         <div className='space-y-8'>
-          <h2 className='text-5xl font-serif text-pink-600 underline'>Get in touch</h2>
+          <h2 className="text-4xl md:text-5xl text-center text-pink-800 font-serif font-extrabold underline mb-16">Lets Connect:</h2>
           <p className='text-gray-600 text-[18px] pt-2'>
           Have a question or a project in mind? I am just a message away!<br/>
             Drop me a line, give me a call, or send me a message via the form below.

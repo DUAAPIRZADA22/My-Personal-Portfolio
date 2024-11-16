@@ -20,7 +20,7 @@ const Card:React.FC<Props> = ({title, description, image, tags}) => {
      </div>
 
      <div  className='p-4 space-y-4'>
-       <div className='text-3xl font-extrabold'>
+       <div className='text-3xl font-extrabold underline'>
         {title}
        </div>
 
