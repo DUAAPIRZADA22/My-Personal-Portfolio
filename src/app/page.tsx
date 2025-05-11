@@ -22,7 +22,7 @@ const Page = () => {
   }, []);
 
   return (
-    <main>
+    <main className="bg-black">
       <Hero />
       <About />
       <Projects />

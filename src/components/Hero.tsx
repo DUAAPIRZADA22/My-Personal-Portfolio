@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Navbar from './Navbar';
 
 const Hero = () => {
@@ -46,6 +47,22 @@ const Hero = () => {
                 />
               </a>
 
+              <a href='https://www.instagram.com/duaa_pirzada/' target='_blank' rel='noopener noreferrer'>
+                <img
+                  src='https://img.icons8.com/ios-filled/50/ff69b4/instagram-new.png'
+                  alt='Instagram'
+                  className='w-10 h-10 hover:scale-110 transition-transform duration-300'
+                />
+              </a>
+
+              <a href='https://twitter.com/DuaaPirzada' target='_blank' rel='noopener noreferrer'>
+                <img
+                  src='https://img.icons8.com/ios-filled/50/ff69b4/twitter.png'
+                  alt='Twitter'
+                  className='w-10 h-10 hover:scale-110 transition-transform duration-300'
+                />
+              </a>
+
               <a href='mailto:pirzadaduaa87@gmail.com' target='_blank' rel='noopener noreferrer'>
                 <img
                   src='https://img.icons8.com/ios-filled/50/ff69b4/email.png'
@@ -57,7 +74,7 @@ const Hero = () => {
 
             {/* Download CV Button */}
             <a
-              href='/duaapirzada-CV.pdf'
+              href='\Duaa Pirzada CV.pdf'
               target='_blank'
               rel='noopener noreferrer'
               className='bg-cyan-500 hover:bg-blue-600 text-black font-bold py-2 px-4 rounded-md text-sm transition-colors duration-300 mt-4'
@@ -67,18 +84,21 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Profile Image */}
+        {/* Profile Image with Subtle Outer Glowing Border */}
         <div className='flex justify-center lg:justify-end mt-10 lg:mt-0'>
-          <img
-            src='/profile.jpeg'
-            alt='Profile'
-            className='w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] lg:w-[320px] lg:h-[320px] rounded-full object-cover'
-            style={{
-              borderColor: 'transparent',
-              borderImage: 'linear-gradient(45deg, #f7e1a0, #ffd700, #f7a4a0) 1',
-              borderImageSlice: 1,
-            }}
-          />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, ease: 'easeOut' }}
+            whileHover={{ scale: 1.05, rotate: [0, 3, -3, 0], transition: { duration: 0.6 } }}
+            className="relative rounded-full p-[3px] bg-gradient-to-tr from-pink-300 via-yellow-200 to-pink-400 shadow-lg"
+          >
+            <img
+              src='/profile.jpeg'
+              alt='Profile'
+              className='w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] lg:w-[320px] lg:h-[320px] rounded-full object-cover'
+            />
+          </motion.div>
         </div>
       </div>
     </div>
@@ -86,4 +106,8 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+
+
 
